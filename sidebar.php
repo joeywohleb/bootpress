@@ -1,7 +1,7 @@
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
 
 			<div class="well sidebar-nav">
-				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>
+				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(1) ) : ?>
 
 					<h2><?php _e('Categories'); ?></h2>
 					<ul><?php wp_list_categories('title_li=&orderby=name'); ?></ul>

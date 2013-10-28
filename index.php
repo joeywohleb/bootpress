@@ -5,7 +5,6 @@
 			<p class="pull-right visible-xs">
 			<button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle Sidebar</button>
 			</p>
-
         </div><!--/span-->
 
 

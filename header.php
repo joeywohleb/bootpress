@@ -44,12 +44,16 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <?php /* <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li> */
-            wp_nav_menu( array( 'container' => '', 'items_wrap' => '%3$s', 'theme_location' => 'navbar-menu' ) );
+            <?php
+              wp_nav_menu( array( 'container' => '', 'items_wrap' => '%3$s', 'theme_location' => 'navbar-menu' ) );
             ?>
           </ul>
+          <form class="navbar-form navbar-right" role="search" action="<?php bloginfo('url') ?>" method="get">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search <?php bloginfo('name'); ?>" id="s" name="s">
+            </div>
+            <button type="submit" class="btn btn-default">Search</button>
+          </form>
         </div><!-- /.nav-collapse -->
       </div><!-- /.container -->
     </div><!-- /.navbar -->

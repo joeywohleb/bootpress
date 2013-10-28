@@ -28,11 +28,11 @@
   </head>
 
   <body>
-    <?php
-      // Fix admin bar overlap bug.
-      if ( is_admin_bar_showing() ) echo '<div style="min-height: 28px;"></div>';
-    ?>
     <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <?php
+        // Fix admin bar overlap bug.
+        if ( is_admin_bar_showing() ) echo '<div style="min-height: 28px;"></div>';
+      ?>
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -47,7 +47,7 @@
             <?php /* <li class="active"><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li> */
-            wp_nav_menu( array( 'container' => '', 'items_wrap' => '%3$s' ) );
+            wp_nav_menu( array( 'container' => '', 'items_wrap' => '%3$s', 'theme_location' => 'navbar-menu' ) );
             ?>
           </ul>
         </div><!-- /.nav-collapse -->

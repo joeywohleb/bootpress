@@ -13,3 +13,8 @@ Text Domain: bootpress
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+
+.navbar-inverse .navbar-nav>li.current-menu-item>a {
+	color: #fff;
+	background-color: #080808;
+}

@@ -12,7 +12,7 @@
     <link href="<?php bloginfo('template_url'); ?>/assets/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="<?php get_stylesheet_uri(); ?>" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 
     <link rel="profile" href="http://gmpg.org/xfn/11" />
 
@@ -53,3 +53,5 @@
         </div><!-- /.nav-collapse -->
       </div><!-- /.container -->
     </div><!-- /.navbar -->
+
+    <div class="container">

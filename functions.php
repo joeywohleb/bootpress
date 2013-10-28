@@ -5,4 +5,7 @@
 	}
 	add_action( 'init', 'register_bootpress_menu' );
 
+	if ( function_exists('register_sidebar') )
+	    register_sidebar();
+
 ?>

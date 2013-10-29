@@ -7,25 +7,17 @@
 
         <title><?php bloginfo('name'); ?> <?php if ( is_single() ) { ?> &#124; <?php } ?> <?php wp_title(); ?></title>
 
-        <!-- Bootstrap core CSS -->
-        <link href="<?php bloginfo('template_url'); ?>/assets/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Bootstrap theme CSS -->
-        <link href="<?php bloginfo('template_url'); ?>/assets/css/bootstrap-theme.min.css" rel="stylesheet">
-
-        <!-- Custom styles for this template -->
-        <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="<?php bloginfo('template_url'); ?>/assets/js/html5shiv.js"></script>
+          <script src="<?php bloginfo('template_url'); ?>/assets/js/respond.min.js"></script>
+        <![endif]-->
 
         <link rel="profile" href="http://gmpg.org/xfn/11" />
 
         <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
         <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
         <?php wp_head(); ?>
-
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-          <script src="<?php bloginfo('template_url'); ?>/assets/js/html5shiv.js"></script>
-          <script src="<?php bloginfo('template_url'); ?>/assets/js/respond.min.js"></script>
-        <![endif]-->
     </head>
 
     <body>

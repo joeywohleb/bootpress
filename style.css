@@ -70,3 +70,18 @@ body {
         width: 50%; /* 6 columns */
     }
 }
+
+/*
+ * Search for home page
+ * Need to create a page called Home and set it to your homepage to use it
+ * --------------------------------------------------
+ */
+.homesearch {
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+    height:500px;
+    padding-top:150px;
+    background-color: #ffffff;
+    margin:0 auto;
+}

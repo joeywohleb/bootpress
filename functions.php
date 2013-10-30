@@ -1,12 +1,12 @@
 <?php
 
 	function register_bootpress_menu() {
-	  register_nav_menu('navbar-menu',__( 'Navbar Menu' ));
+	  register_nav_menu( 'navbar-menu' ,__( 'Navbar Menu' ));
 	}
 	add_action( 'init', 'register_bootpress_menu' );
 
 	if ( function_exists('register_sidebar') )
-	   register_sidebars(4,array(
+	   register_sidebars( 4, array(
         'before_widget' => '',
         'after_widget' => '',
         'before_title' => '<h3>',
@@ -29,7 +29,7 @@
 		wp_enqueue_style( 'bootstrap-theme' );
 		wp_enqueue_style( 'bootpress' );
 
-		wp_enqueue_script('jquery','','','',true);
+		wp_enqueue_script( 'jquery', '', '', '', true );
 		wp_enqueue_script( 'bootstrap' );
 		wp_enqueue_script( 'bootpress' );
 	}

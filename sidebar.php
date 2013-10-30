@@ -17,6 +17,6 @@
 							</ul>
 
 						<?php endif; ?>
-					</div>
+					</div><!--/.well -->
 
         		</div><!--/span-->

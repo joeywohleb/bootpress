@@ -92,3 +92,16 @@ body {
     background-color: #ffffff;
     margin:0 auto;
 }
+
+/*
+ * Posts
+ * --------------------------------------------------
+ */
+.post {
+    padding: 15px;
+}
+
+.post-info {
+    padding: 10px 0px;
+}
+

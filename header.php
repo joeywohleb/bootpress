@@ -20,7 +20,7 @@
         <?php wp_head(); ?>
     </head>
 
-    <body>
+    <body <?php body_class(); ?>>
         <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
             <?php
                 // Fix admin bar overlap bug.

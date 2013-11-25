@@ -4,20 +4,21 @@
         <meta charset="<?php bloginfo( 'charset' ); ?>" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="<?php bloginfo( 'description' ); ?>">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
         <title><?php bloginfo('name'); ?> <?php if ( is_single() ) { ?> &#124; <?php } ?> <?php wp_title(); ?></title>
-
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-          <script src="<?php bloginfo('template_url'); ?>/assets/js/html5shiv.js"></script>
-          <script src="<?php bloginfo('template_url'); ?>/assets/js/respond.min.js"></script>
-        <![endif]-->
 
         <link rel="profile" href="http://gmpg.org/xfn/11" />
 
         <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
         <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
         <?php wp_head(); ?>
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="<?php bloginfo('template_url'); ?>/assets/js/html5shiv.js"></script>
+          <script src="<?php bloginfo('template_url'); ?>/assets/js/respond.min.js"></script>
+        <![endif]-->
     </head>
 
     <body <?php body_class(); ?>>

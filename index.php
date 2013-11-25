@@ -10,7 +10,7 @@
                             <?php while ( have_posts() ) : the_post(); ?>
 
                                 <article class="post" id="post-<?php the_ID(); ?>">
-                                    <h2 class="post-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e('Permanent Link for', 'bootpress') . ' ' . the_title(); ?>"><?php the_title(); ?></a></h2>
+                                    <h2 class="post-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php __('Permanent Link for', 'bootpress') . ' ' . the_title(); ?>"><?php the_title(); ?></a></h2>
                                     <div class="post-info">
                                         <span class="glyphicon glyphicon-time"></span> <?php the_time(get_option('date_format').', '.get_option('time_format')) ?>
                                         <span class="glyphicon glyphicon-user"></span> <?php the_author_posts_link(); ?>
@@ -18,7 +18,7 @@
                                         <?php if ( comments_open() ) : ?><span class="glyphicon glyphicon-comment"></span> <?php comments_popup_link(); endif; ?>
                                         <span class="glyphicon glyphicon-wrench"></span> <?php edit_post_link(); ?> </div>
                                     <div class="post-content">
-                                        <?php the_content('<strong>' . __('Continue reading') . ' ' . the_title('', '', false) . '</strong>'); ?>
+                                        <?php the_content(__('Continue reading') . ' ' . the_title('', '', false)); ?>
                                     </div>
 
                                     <div class="post-info">
